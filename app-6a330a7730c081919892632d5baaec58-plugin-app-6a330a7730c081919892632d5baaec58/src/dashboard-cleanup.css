@@ -1,0 +1,4 @@
+/* Keep dashboard stat cards clean—no decorative corner circles. */
+.stat-grid article:before {
+  display: none;
+}

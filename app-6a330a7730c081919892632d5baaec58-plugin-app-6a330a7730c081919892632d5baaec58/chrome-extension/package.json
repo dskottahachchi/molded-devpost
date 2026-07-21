@@ -1,0 +1,14 @@
+{
+  "name": "molded-recorder-extension",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@rrweb/record": "^2.0.0-alpha.18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

@@ -1,0 +1,16 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"></head>
+<body><main>
+  <header class="popup-header">
+    <span class="mark">✦</span>
+    <div><p>MOLDED RECORDER</p><b>Capture the real thing.</b><small id="site">Checking active tab…</small></div>
+    <span class="header-dot" title="Recorder ready"></span>
+  </header>
+
+  <div class="record-state" id="state"><span></span><div><b>Ready to capture</b><small>Record a real product workflow with rrweb.</small></div></div>
+  <button id="toggle" class="primary"><span class="record-dot">●</span> Start recording <em>→</em></button>
+  <section class="recent">
+    <div class="section-heading"><span><small>SESSION LIBRARY</small><b>Recent recordings</b></span><button id="refresh" aria-label="Refresh recordings">↻</button></div>
+    <ul id="sessions"></ul>
+  </section>
+</main><script src="popup.js"></script></body></html>

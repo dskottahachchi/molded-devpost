@@ -1,0 +1,54 @@
+.capture-focus {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 40px;
+  background: #120b24;
+  color: #251640;
+}
+
+.capture-back { position: absolute; top: 30px; left: 40px; display: inline-flex; align-items: center; gap: 9px; color: #eeeaff; font: 800 12px Manrope; text-decoration: none; opacity: .88; transition: opacity .18s ease, transform .18s ease; }
+.capture-back span { display: grid; width: 26px; height: 26px; place-items: center; border: 1px solid #6d5a96; border-radius: 50%; color: #44dbe5; font-size: 16px; }
+.capture-back:hover { opacity: 1; transform: translateX(-2px); }
+
+.capture-setup {
+  display: grid;
+  grid-template-columns: minmax(260px, .8fr) minmax(430px, 1.25fr) auto;
+  gap: 56px;
+  align-items: center;
+  width: min(1400px, 100%);
+  padding: 68px 72px;
+  border: 1px solid #d7cdf1;
+  border-radius: 28px;
+  background: #eeeaff;
+  box-shadow: 0 30px 90px #07031066;
+}
+
+.capture-setup .extension-eyebrow { color: #6e6288; }
+.capture-setup .extension-eyebrow i { background: #7a58ff; }
+.capture-setup h1 { margin: 0; font-size: 48px; line-height: .98; letter-spacing: -3px; }
+.capture-setup-copy > p:not(.extension-eyebrow) { max-width: 300px; margin: 18px 0 24px; color: #6a617c; font-size: 13px; line-height: 1.65; }
+.capture-download, .capture-setup > button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 10px; padding: 14px 16px; background: #7653ff; color: #fff; font: 800 11px Manrope; text-decoration: none; cursor: pointer; box-shadow: 0 12px 26px #7653ff40; }
+.capture-download span { font-size: 16px; }
+.capture-setup ol { display: grid; gap: 20px; padding: 0; margin: 0; list-style: none; }
+.capture-setup li { display: flex; gap: 13px; align-items: start; color: #43375d; font-size: 13px; line-height: 1.48; }
+.capture-setup li > b { display: grid; flex: none; width: 27px; height: 27px; place-items: center; border-radius: 50%; background: #7a58ff; color: #fff; font: 10px 'DM Mono'; }
+.capture-setup li strong { color: #2b1c4b; }
+.capture-setup > button { white-space: nowrap; }
+
+@media (max-width: 980px) {
+  .capture-focus { padding: 26px; }
+  .capture-back { top: 20px; left: 26px; }
+  .capture-setup { grid-template-columns: 1fr; gap: 34px; padding: 50px; }
+  .capture-setup > button { justify-self: start; }
+}
+
+@media (max-width: 620px) {
+  .capture-focus { padding: 16px; }
+  .capture-back { top: 16px; left: 16px; }
+  .capture-setup { padding: 34px 25px; border-radius: 18px; gap: 27px; }
+  .capture-setup h1 { font-size: 38px; letter-spacing: -2.3px; }
+  .capture-setup li { font-size: 12px; }
+  .capture-download, .capture-setup > button { width: 100%; }
+}
