@@ -38,17 +38,11 @@ You only need **Node.js 20+** and **Google Chrome**. No database account or API 
 
 ## How Codex and GPT-5.6 were used
 
-### Codex
+### Codex & GPT-5.6
 
 Codex was used as a development collaborator throughout the project. It accelerated implementation of the TanStack Start application, the Manifest V3 Chrome extension, rrweb replay integration, recording persistence, and the responsive visual system across the landing page, dashboard, Studio, and buyer-facing demo.
 
 It was particularly helpful for iterating quickly on interaction details: reliable start/stop recording behavior, replay sizing, draggable and lockable spotlight targets, and the capture-to-dashboard data flow. Product direction, visual decisions, and the final interaction design were intentionally driven and reviewed by the builder.
-
-### GPT-5.6
-
-Molded includes an optional GPT-5.6 integration through the OpenAI Responses API. When an API key is supplied, it can generate three concise guided-tour steps from a demo title, returning structured step titles, copy, and target identifiers for the Studio.
-
-The core recording, editing, replay, publishing, and buyer-signal flows do not depend on an API key. The GPT-5.6 suggestion path is clearly separated as an optional enhancement; it should be configured with a personal API key before use in a production setting.
 
 ## Local data and reset
 
